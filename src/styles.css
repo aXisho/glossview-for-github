@@ -1,0 +1,262 @@
+/* GlossView for GitHub — directive styles */
+/* Derived from k1LoW/mo (MIT License, Copyright © 2026 Ken'ichiro Oyama <k1lowxb@gmail.com>)
+   via glmo (https://github.com/aXisho/glmo).
+   https://github.com/k1LoW/mo */
+
+/* ── Syntax highlighting (highlight.js github theme) ── */
+pre code.hljs { display: block; overflow-x: auto; padding: 1em; }
+code.hljs { padding: 3px 5px; }
+/* Light theme */
+.hljs { color: #24292e; background: #ffffff; }
+.hljs-doctag, .hljs-keyword, .hljs-meta .hljs-keyword, .hljs-template-tag, .hljs-template-variable, .hljs-type, .hljs-variable.language_ { color: #d73a49; }
+.hljs-title, .hljs-title.class_, .hljs-title.class_.inherited__, .hljs-title.function_ { color: #6f42c1; }
+.hljs-attr, .hljs-attribute, .hljs-literal, .hljs-meta, .hljs-number, .hljs-operator, .hljs-variable, .hljs-selector-attr, .hljs-selector-class, .hljs-selector-id { color: #005cc5; }
+.hljs-regexp, .hljs-string, .hljs-meta .hljs-string { color: #032f62; }
+.hljs-built_in, .hljs-symbol { color: #e36209; }
+.hljs-comment, .hljs-code, .hljs-formula { color: #6a737d; }
+.hljs-name, .hljs-quote, .hljs-selector-tag, .hljs-selector-pseudo { color: #22863a; }
+.hljs-subst { color: #24292e; }
+.hljs-section { color: #005cc5; font-weight: bold; }
+.hljs-bullet { color: #735c0f; }
+.hljs-emphasis { color: #24292e; font-style: italic; }
+.hljs-strong { color: #24292e; font-weight: bold; }
+.hljs-addition { color: #22863a; background-color: #f0fff4; }
+.hljs-deletion { color: #b31d28; background-color: #ffeef0; }
+/* Dark theme — GitHub uses data-color-mode="dark" or "auto" (OS) on <html> */
+[data-color-mode="dark"] .hljs { color: #c9d1d9; background: #0d1117; }
+[data-color-mode="dark"] .hljs-doctag, [data-color-mode="dark"] .hljs-keyword, [data-color-mode="dark"] .hljs-meta .hljs-keyword, [data-color-mode="dark"] .hljs-template-tag, [data-color-mode="dark"] .hljs-template-variable, [data-color-mode="dark"] .hljs-type, [data-color-mode="dark"] .hljs-variable.language_ { color: #ff7b72; }
+[data-color-mode="dark"] .hljs-title, [data-color-mode="dark"] .hljs-title.class_, [data-color-mode="dark"] .hljs-title.class_.inherited__, [data-color-mode="dark"] .hljs-title.function_ { color: #d2a8ff; }
+[data-color-mode="dark"] .hljs-attr, [data-color-mode="dark"] .hljs-attribute, [data-color-mode="dark"] .hljs-literal, [data-color-mode="dark"] .hljs-meta, [data-color-mode="dark"] .hljs-number, [data-color-mode="dark"] .hljs-operator, [data-color-mode="dark"] .hljs-variable, [data-color-mode="dark"] .hljs-selector-attr, [data-color-mode="dark"] .hljs-selector-class, [data-color-mode="dark"] .hljs-selector-id { color: #79c0ff; }
+[data-color-mode="dark"] .hljs-regexp, [data-color-mode="dark"] .hljs-string, [data-color-mode="dark"] .hljs-meta .hljs-string { color: #a5d6ff; }
+[data-color-mode="dark"] .hljs-built_in, [data-color-mode="dark"] .hljs-symbol { color: #ffa657; }
+[data-color-mode="dark"] .hljs-comment, [data-color-mode="dark"] .hljs-code, [data-color-mode="dark"] .hljs-formula { color: #8b949e; }
+[data-color-mode="dark"] .hljs-name, [data-color-mode="dark"] .hljs-quote, [data-color-mode="dark"] .hljs-selector-tag, [data-color-mode="dark"] .hljs-selector-pseudo { color: #7ee787; }
+[data-color-mode="dark"] .hljs-subst { color: #c9d1d9; }
+[data-color-mode="dark"] .hljs-section { color: #1f6feb; font-weight: bold; }
+[data-color-mode="dark"] .hljs-bullet { color: #f2cc60; }
+[data-color-mode="dark"] .hljs-emphasis { color: #c9d1d9; font-style: italic; }
+[data-color-mode="dark"] .hljs-strong { color: #c9d1d9; font-weight: bold; }
+[data-color-mode="dark"] .hljs-addition { color: #aff5b4; background-color: #033a16; }
+[data-color-mode="dark"] .hljs-deletion { color: #ffdcd7; background-color: #67060c; }
+@media (prefers-color-scheme: dark) {
+  [data-color-mode="auto"] .hljs { color: #c9d1d9; background: #0d1117; }
+  [data-color-mode="auto"] .hljs-doctag, [data-color-mode="auto"] .hljs-keyword, [data-color-mode="auto"] .hljs-meta .hljs-keyword, [data-color-mode="auto"] .hljs-template-tag, [data-color-mode="auto"] .hljs-template-variable, [data-color-mode="auto"] .hljs-type, [data-color-mode="auto"] .hljs-variable.language_ { color: #ff7b72; }
+  [data-color-mode="auto"] .hljs-title, [data-color-mode="auto"] .hljs-title.class_, [data-color-mode="auto"] .hljs-title.class_.inherited__, [data-color-mode="auto"] .hljs-title.function_ { color: #d2a8ff; }
+  [data-color-mode="auto"] .hljs-attr, [data-color-mode="auto"] .hljs-attribute, [data-color-mode="auto"] .hljs-literal, [data-color-mode="auto"] .hljs-meta, [data-color-mode="auto"] .hljs-number, [data-color-mode="auto"] .hljs-operator, [data-color-mode="auto"] .hljs-variable, [data-color-mode="auto"] .hljs-selector-attr, [data-color-mode="auto"] .hljs-selector-class, [data-color-mode="auto"] .hljs-selector-id { color: #79c0ff; }
+  [data-color-mode="auto"] .hljs-regexp, [data-color-mode="auto"] .hljs-string, [data-color-mode="auto"] .hljs-meta .hljs-string { color: #a5d6ff; }
+  [data-color-mode="auto"] .hljs-built_in, [data-color-mode="auto"] .hljs-symbol { color: #ffa657; }
+  [data-color-mode="auto"] .hljs-comment, [data-color-mode="auto"] .hljs-code, [data-color-mode="auto"] .hljs-formula { color: #8b949e; }
+  [data-color-mode="auto"] .hljs-name, [data-color-mode="auto"] .hljs-quote, [data-color-mode="auto"] .hljs-selector-tag, [data-color-mode="auto"] .hljs-selector-pseudo { color: #7ee787; }
+  [data-color-mode="auto"] .hljs-subst { color: #c9d1d9; }
+  [data-color-mode="auto"] .hljs-section { color: #1f6feb; font-weight: bold; }
+  [data-color-mode="auto"] .hljs-bullet { color: #f2cc60; }
+  [data-color-mode="auto"] .hljs-emphasis { color: #c9d1d9; font-style: italic; }
+  [data-color-mode="auto"] .hljs-strong { color: #c9d1d9; font-weight: bold; }
+  [data-color-mode="auto"] .hljs-addition { color: #aff5b4; background-color: #033a16; }
+  [data-color-mode="auto"] .hljs-deletion { color: #ffdcd7; background-color: #67060c; }
+}
+
+/* Heading scroll offset — clears GitHub's sticky global nav (~64px) */
+.markdown-body h1, .markdown-body h2, .markdown-body h3,
+.markdown-body h4, .markdown-body h5, .markdown-body h6 { scroll-margin-top: 120px; }
+
+/* Heading directive — promoted background-coloured Markdown heading.
+   Overrides default GitHub heading margins/line-height so the coloured band
+   hugs the text vertically and stretches the full width horizontally. */
+h1.gloss-heading, h2.gloss-heading, h3.gloss-heading,
+h4.gloss-heading, h5.gloss-heading, h6.gloss-heading {
+  display: block;
+  padding: 0.3em 0.6em;
+  border-radius: 6px;
+  border-bottom: none;
+  margin-top: 1rem;
+  margin-left: 0;
+  margin-right: 0;
+  line-height: 1.4;
+}
+.gloss-heading > p { margin: 0; padding: 0; }
+.gloss-heading-color-gray   { background: color-mix(in srgb, var(--gloss-gray, #8c959f) 15%, transparent); }
+.gloss-heading-color-blue   { background: color-mix(in srgb, var(--gloss-blue, #0969da) 15%, transparent); }
+.gloss-heading-color-green  { background: color-mix(in srgb, var(--gloss-green, #1a7f37) 15%, transparent); }
+.gloss-heading-color-yellow { background: color-mix(in srgb, var(--gloss-yellow, #9a6700) 15%, transparent); }
+.gloss-heading-color-red    { background: color-mix(in srgb, var(--gloss-red, #cf222e) 15%, transparent); }
+.gloss-heading-color-purple { background: color-mix(in srgb, var(--gloss-purple, #8250df) 15%, transparent); }
+
+/* Tabs */
+.gloss-tabs-bar { display: flex; gap: 0; border-bottom: 1px solid var(--color-gh-border, #d0d7de); margin-bottom: 0; }
+.gloss-tabs-btn { padding: 0.4rem 1rem; border: none; border-bottom: 2px solid transparent; background: none; cursor: pointer; color: var(--color-gh-text-secondary, #656d76); font-size: 0.875rem; }
+.gloss-tabs-btn.active { border-bottom-color: var(--gloss-blue, #0969da); color: var(--color-gh-text-primary, #1f2328); font-weight: 600; }
+.gloss-tabs-btn.gloss-color-gray.active   { border-bottom-color: var(--gloss-gray, #8c959f); }
+.gloss-tabs-btn.gloss-color-blue.active   { border-bottom-color: var(--gloss-blue, #0969da); }
+.gloss-tabs-btn.gloss-color-green.active  { border-bottom-color: var(--gloss-green, #1a7f37); }
+.gloss-tabs-btn.gloss-color-yellow.active { border-bottom-color: var(--gloss-yellow, #9a6700); }
+.gloss-tabs-btn.gloss-color-red.active    { border-bottom-color: var(--gloss-red, #cf222e); }
+.gloss-tabs-btn.gloss-color-purple.active { border-bottom-color: var(--gloss-purple, #8250df); }
+.gloss-tabs-panel { padding: 0.75rem 0 0; }
+
+/* Badge */
+.gloss-badge { display: inline-flex; align-items: center; padding: 0.1em 0.5em; border-radius: 9999px; font-size: 0.75em; font-weight: 600; line-height: 1.5; }
+.gloss-badge.gloss-color-gray   { background: #eaeef2; color: #57606a; }
+.gloss-badge.gloss-color-blue   { background: #ddf4ff; color: #0969da; }
+.gloss-badge.gloss-color-green  { background: #dafbe1; color: #1a7f37; }
+.gloss-badge.gloss-color-yellow { background: #fff8c5; color: #9a6700; }
+.gloss-badge.gloss-color-red    { background: #ffebe9; color: #cf222e; }
+.gloss-badge.gloss-color-purple { background: #fbefff; color: #8250df; }
+
+/* KBD — span instead of kbd to avoid github-markdown-css overrides */
+.gloss-kbd { display: inline-block; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.8em; padding: 0.1em 0.5em; border: 1px solid #d0d7de; border-radius: 4px; background: #f6f8fa; box-shadow: inset 0 -1px 0 #d0d7de; line-height: 1.4; vertical-align: middle; }
+
+/* Small */
+.gloss-small { font-size: 0.8em; color: var(--color-gh-text-secondary, #656d76); }
+
+/* Details */
+details.gloss-details { border: 1px solid var(--color-gh-border, #d0d7de); border-radius: 6px; padding: 0.5rem 0.75rem; margin: 2rem 0; }
+.gloss-details > summary { cursor: pointer; font-weight: 600; }
+.gloss-details[open] > summary { margin-bottom: 0.6rem; }
+.gloss-details.gloss-color-blue   { border-color: var(--gloss-blue, #0969da);   background: color-mix(in srgb, var(--gloss-blue, #0969da) 6%, transparent); }
+.gloss-details.gloss-color-green  { border-color: var(--gloss-green, #1a7f37);  background: color-mix(in srgb, var(--gloss-green, #1a7f37) 6%, transparent); }
+.gloss-details.gloss-color-yellow { border-color: var(--gloss-yellow, #9a6700); background: color-mix(in srgb, var(--gloss-yellow, #9a6700) 6%, transparent); }
+.gloss-details.gloss-color-red    { border-color: var(--gloss-red, #cf222e);    background: color-mix(in srgb, var(--gloss-red, #cf222e) 6%, transparent); }
+.gloss-details.gloss-color-purple { border-color: var(--gloss-purple, #8250df); background: color-mix(in srgb, var(--gloss-purple, #8250df) 6%, transparent); }
+.gloss-details.gloss-color-gray   { border-color: var(--gloss-gray, #8c959f);   background: color-mix(in srgb, var(--gloss-gray, #8c959f) 6%, transparent); }
+
+
+/* Footnote — marked-footnote markup uses data-* attrs, no class names */
+.footnotes { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--color-gh-border, #d0d7de); font-size: 0.9em; }
+.footnotes ol { padding-left: 1.25rem; }
+sup:has(> a[data-footnote-ref]) { font-size: 0.85em; vertical-align: super; line-height: 0; }
+a[data-footnote-ref] { scroll-margin-top: 120px; }
+a[data-footnote-backref] { text-decoration: none; margin-left: 0.25rem; }
+
+/* Card */
+.gloss-card-link { display: block; }
+.gloss-card { border: 1px solid var(--color-gh-border, #d0d7de); border-radius: 6px; padding: 1rem; margin: 0.5rem 0; text-decoration: none; color: inherit; display: block; transition: border-color 0.15s, box-shadow 0.15s; }
+.gloss-card:hover { border-color: var(--gloss-blue, #0969da); box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+.gloss-card-title { font-weight: 600; margin-bottom: 0.5rem; }
+.gloss-card > *:last-child { margin-bottom: 0; }
+.gloss-card.gloss-color-blue   { border-color: var(--gloss-blue, #0969da); background: color-mix(in srgb, var(--gloss-blue, #0969da) 6%, transparent); }
+.gloss-card.gloss-color-green  { border-color: var(--gloss-green, #1a7f37); background: color-mix(in srgb, var(--gloss-green, #1a7f37) 6%, transparent); }
+.gloss-card.gloss-color-yellow { border-color: var(--gloss-yellow, #9a6700); background: color-mix(in srgb, var(--gloss-yellow, #9a6700) 6%, transparent); }
+.gloss-card.gloss-color-red    { border-color: var(--gloss-red, #cf222e); background: color-mix(in srgb, var(--gloss-red, #cf222e) 6%, transparent); }
+.gloss-card.gloss-color-purple { border-color: var(--gloss-purple, #8250df); background: color-mix(in srgb, var(--gloss-purple, #8250df) 6%, transparent); }
+.gloss-card.gloss-color-gray   { border-color: var(--gloss-gray, #8c959f); background: color-mix(in srgb, var(--gloss-gray, #8c959f) 6%, transparent); }
+
+/* Grid — `border=solid` (default) paints divider lines behind cells that use
+   the page background. `border=none` removes the dividers. Use a `card`
+   wrapper for an outer frame. */
+.gloss-grid {
+  display: grid;
+  gap: 1px;
+  margin: 1rem 0;
+  background: var(--color-gh-border, #d0d7de);
+}
+.gloss-cell {
+  padding: 0.75rem 1rem;
+  background: var(--color-gh-bg, #ffffff);
+}
+.gloss-grid.gloss-color-blue   { background: var(--gloss-blue, #0969da); }
+.gloss-grid.gloss-color-green  { background: var(--gloss-green, #1a7f37); }
+.gloss-grid.gloss-color-yellow { background: var(--gloss-yellow, #9a6700); }
+.gloss-grid.gloss-color-red    { background: var(--gloss-red, #cf222e); }
+.gloss-grid.gloss-color-purple { background: var(--gloss-purple, #8250df); }
+.gloss-grid.gloss-border-none {
+  gap: 1rem;
+  background: transparent;
+}
+.gloss-grid.gloss-border-none > .gloss-cell:not(.gloss-border-solid) {
+  padding-left: 0;
+  padding-right: 0;
+  background: transparent;
+}
+.gloss-cell.gloss-border-none {
+  padding-left: 0;
+  padding-right: 0;
+  background: transparent;
+}
+/* Grid colour acts as a default for its cells (each cell still picks its own colour class). */
+.gloss-grid.gloss-color-blue   > .gloss-cell:not([class*="gloss-color-"]) { border-color: var(--gloss-blue, #0969da); }
+.gloss-grid.gloss-color-green  > .gloss-cell:not([class*="gloss-color-"]) { border-color: var(--gloss-green, #1a7f37); }
+.gloss-grid.gloss-color-yellow > .gloss-cell:not([class*="gloss-color-"]) { border-color: var(--gloss-yellow, #9a6700); }
+.gloss-grid.gloss-color-red    > .gloss-cell:not([class*="gloss-color-"]) { border-color: var(--gloss-red, #cf222e); }
+.gloss-grid.gloss-color-purple > .gloss-cell:not([class*="gloss-color-"]) { border-color: var(--gloss-purple, #8250df); }
+.gloss-grid.gloss-color-gray   > .gloss-cell:not([class*="gloss-color-"]) { border-color: var(--gloss-gray, #8c959f); }
+.gloss-cell > strong { display: block; margin-bottom: 0.4rem; }
+.gloss-cell > *:last-child { margin-bottom: 0; }
+.gloss-cell.gloss-color-blue   { background: color-mix(in srgb, var(--gloss-blue, #0969da) 8%, var(--color-gh-bg, #fff)); }
+.gloss-cell.gloss-color-green  { background: color-mix(in srgb, var(--gloss-green, #1a7f37) 8%, var(--color-gh-bg, #fff)); }
+.gloss-cell.gloss-color-yellow { background: color-mix(in srgb, var(--gloss-yellow, #9a6700) 8%, var(--color-gh-bg, #fff)); }
+.gloss-cell.gloss-color-red    { background: color-mix(in srgb, var(--gloss-red, #cf222e) 8%, var(--color-gh-bg, #fff)); }
+.gloss-cell.gloss-color-purple { background: color-mix(in srgb, var(--gloss-purple, #8250df) 8%, var(--color-gh-bg, #fff)); }
+.gloss-cell.gloss-color-gray   { background: color-mix(in srgb, var(--gloss-gray, #8c959f) 8%, var(--color-gh-bg, #fff)); }
+/* border=solid cells use page background regardless of color class */
+.gloss-cell.gloss-border-solid { background: var(--color-gh-bg, #ffffff); }
+
+/* Steps — overrides GitHub's .markdown-body li+li/.markdown-body li>p/pre margins
+   (higher specificity than ours) with !important to keep the vertical rail
+   continuous between adjacent steps. */
+.gloss-steps { list-style: none; padding: 0; margin: 1rem 0; counter-reset: gloss-step; }
+.gloss-steps > .gloss-step { margin: 0 0 0 0.75rem !important; }
+.gloss-step::marker { content: ""; }
+.gloss-step { counter-increment: gloss-step; padding: 0.75rem 0 0.75rem 3rem; position: relative; }
+.gloss-step > strong { font-size: 1.1rem !important; font-weight: 600; display: block; line-height: 2rem; margin-bottom: 0.4rem !important; margin-top: 0 !important; }
+.gloss-step::before { content: counter(gloss-step); position: absolute; left: -1rem; top: 0.75rem; width: 2rem; height: 2rem; border-radius: 50%; background: var(--gloss-blue, #0969da); color: white; font-size: 0.875rem; font-weight: 600; display: flex; align-items: center; justify-content: center; z-index: 1; }
+.gloss-step:not(:last-child)::after { content: ""; position: absolute; left: 0; top: 1.75rem; bottom: -1.75rem; width: 2px; background: var(--color-gh-border, #d0d7de); z-index: 0; }
+.gloss-step.gloss-color-gray::before   { background: var(--gloss-gray, #8c959f); }
+.gloss-step.gloss-color-blue::before   { background: var(--gloss-blue, #0969da); }
+.gloss-step.gloss-color-green::before  { background: var(--gloss-green, #1a7f37); }
+.gloss-step.gloss-color-yellow::before { background: var(--gloss-yellow, #9a6700); }
+.gloss-step.gloss-color-red::before    { background: var(--gloss-red, #cf222e); }
+.gloss-step.gloss-color-purple::before { background: var(--gloss-purple, #8250df); }
+.gloss-step > * { margin-top: 0 !important; }
+.gloss-step > *:last-child { margin-bottom: 0 !important; }
+.gloss-step > p { margin: 0 0 0.5rem 0 !important; }
+.gloss-step > pre, .gloss-step > .gloss-pre-wrapper { margin: 0 0 0.4rem 0 !important; }
+.gloss-step > .gloss-pre-wrapper > pre { margin: 0 !important; }
+.gloss-step > div { margin: 0 !important; }
+
+/* TOC */
+.gloss-toc { background: var(--color-gh-bg-sidebar, #f6f8fa); border: 1px solid var(--color-gh-border, #d0d7de); border-radius: 6px; padding: 0.75rem 1rem; margin: 1rem 0; }
+.gloss-toc-title { font-weight: 600; margin-bottom: 0.5rem; font-size: 0.875rem; color: var(--color-gh-text-secondary, #656d76); }
+.gloss-toc ol, .gloss-toc ul { list-style: none; margin: 0; padding-left: 0; font-size: 0.875rem; }
+.gloss-toc li::marker { content: ""; }
+.gloss-toc li { margin: 0.25rem 0; }
+.gloss-toc a { color: var(--color-gh-text-link, #0969da); text-decoration: none; }
+.gloss-toc a:hover { text-decoration: underline; }
+
+/* Copy button */
+.gloss-pre-wrapper { position: relative; display: block; }
+.gloss-copy-btn {
+  position: absolute; top: 0.4rem; right: 0.4rem;
+  padding: 0.15rem 0.5rem; font-size: 0.72rem;
+  font-family: ui-sans-serif, -apple-system, sans-serif;
+  background: var(--color-canvas-default, #ffffff);
+  border: 1px solid var(--color-border-default, #d0d7de);
+  border-radius: 6px; color: var(--color-fg-muted, #57606a);
+  cursor: pointer; opacity: 0; transition: opacity 0.15s; line-height: 1.4; z-index: 1;
+}
+.gloss-pre-wrapper:hover .gloss-copy-btn, .gloss-copy-btn:focus-visible { opacity: 1; }
+[data-color-mode="dark"] .gloss-copy-btn {
+  background: var(--color-canvas-overlay, #161b22);
+  border-color: var(--color-border-default, #30363d); color: var(--color-fg-muted, #8b949e);
+}
+@media (prefers-color-scheme: dark) {
+  [data-color-mode="auto"] .gloss-copy-btn {
+    background: var(--color-canvas-overlay, #161b22);
+    border-color: var(--color-border-default, #30363d); color: var(--color-fg-muted, #8b949e);
+  }
+}
+
+/* Code block with filename label */
+.gloss-code-block { margin: 1rem 0; border: 1px solid var(--color-gh-border, #d0d7de); border-radius: 6px; overflow: hidden; }
+.gloss-code-filename { display: block; font-family: ui-monospace, monospace; font-size: 0.75em; padding: 0.3em 0.75em; background: var(--color-gh-bg-sidebar, #f6f8fa); border-bottom: 1px solid var(--color-gh-border, #d0d7de); color: var(--color-fg-default, #1f2328); }
+.gloss-code-block > pre,
+.gloss-code-block > .gloss-pre-wrapper > pre { margin: 0 !important; border-radius: 0 !important; }
+.gloss-code-block > .gloss-pre-wrapper { margin: 0 !important; }
+
+
+/* Body line-height — WCAG 2.1 SC 1.4.12: 1.6–1.8 optimal for sustained screen reading.
+   github-markdown-css defaults to 1.5; explicit overrides per GitHub font-size tier. */
+.markdown-body                           { line-height: 1.7; } /* medium 16px */
+[data-font-size="small"]  .markdown-body { line-height: 1.8; } /* small  14px */
+[data-font-size="large"]  .markdown-body { line-height: 1.7; } /* large  18px */
+[data-font-size="xlarge"] .markdown-body { line-height: 1.6; } /* xlarge 20px */

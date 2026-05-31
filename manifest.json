@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "GlossView for GitHub",
+  "version": "1.0.0",
+  "description": "Renders Gloss Markdown directives (.gloss.md) on GitHub pages.",
+  "icons": {
+    "16": "icons/icon16.svg",
+    "48": "icons/icon48.svg",
+    "128": "icons/icon128.svg"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["src/editor-bridge.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": ["https://github.com/*", "https://gist.github.com/*"],
+      "js": ["src/content.js"],
+      "css": ["src/styles.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": [],
+  "host_permissions": [
+    "https://github.com/*",
+    "https://gist.github.com/*",
+    "https://gist.githubusercontent.com/*"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "glossview-for-github",
+  "version": "1.0.0",
+  "description": "Chrome extension: renders Gloss Markdown directives on GitHub",
+  "scripts": {
+    "build": "npm run build:stage && npm run build:bundle && npm run package",
+    "build:stage": "node scripts/package-extension.mjs --stage",
+    "build:bundle": "vite build",
+    "package": "node scripts/package-extension.mjs --zip",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "watch": "npm run build:stage && vite build --watch"
+  },
+  "devDependencies": {
+    "@types/dompurify": "^3.0.5",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.4.0",
+    "vite": "^8.0.11",
+    "vitest": "^4.1.5"
+  },
+  "dependencies": {
+    "dompurify": "^3.4.5",
+    "highlight.js": "^11.11.1",
+    "marked": "^18.0.3",
+    "marked-footnote": "^1.4.0"
+  }
+}
